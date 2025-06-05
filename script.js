@@ -4,8 +4,8 @@ function mincost(arr)
 // return the min cost 
 	let sum=0,prev=0;
 	arr.forEach((item)=>{
-		// prev=sum;
-      sum=sum+item;
+		prev=sum;
+      sum=prev+sum+item;
 	})
 	return sum;
 }
