@@ -7,7 +7,7 @@ function mincost(arr)
 	arr.sort((a,b)=>a-b);
 		const cost=arr.shift()+arr.shift();
 		sum+=cost;
-		arr.push(sum);
+		arr.push(cost);
      }
 	
 	return sum;
